@@ -9,7 +9,7 @@ let wacht = 0
 let sprite: game.LedSprite = null
 sprite = game.createSprite(2, 2)
 basic.forever(function () {
-    if (game.score() == 20) {
+    if (game.score() == 15) {
         game.pause()
         basic.showLeds(`
             # # # # #
@@ -37,11 +37,6 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (game.score() == 19) {
-        wacht = 100
-    }
-})
-basic.forever(function () {
     if (game.score() == 1) {
         wacht = 230
     }
@@ -57,43 +52,33 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (game.score() == 5) {
-        wacht = 170
-    }
-})
-basic.forever(function () {
-    if (game.score() == 3) {
-        wacht = 190
-    }
-})
-basic.forever(function () {
-    if (game.score() == 4) {
-        wacht = 180
-    }
-})
-basic.forever(function () {
-    if (game.score() == 7) {
-        wacht = 160
-    }
-})
-basic.forever(function () {
     if (game.score() == 9) {
         wacht = 150
     }
 })
 basic.forever(function () {
-    if (game.score() == 12) {
-        wacht = 140
+    if (game.score() == 5) {
+        wacht = 190
     }
 })
 basic.forever(function () {
-    if (game.score() == 15) {
+    if (game.score() == 7) {
+        wacht = 180
+    }
+})
+basic.forever(function () {
+    if (game.score() == 11) {
         wacht = 130
     }
 })
 basic.forever(function () {
-    if (game.score() == 17) {
+    if (game.score() == 12) {
         wacht = 120
+    }
+})
+basic.forever(function () {
+    if (game.score() == 14) {
+        wacht = 100
     }
 })
 basic.forever(function () {
