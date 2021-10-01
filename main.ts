@@ -1,18 +1,9 @@
-input.onGesture(Gesture.LogoDown, function () {
-    game.resume()
-})
 input.onButtonPressed(Button.A, function () {
     if (sprite.get(LedSpriteProperty.X) == 2) {
         game.addScore(1)
     } else {
         game.gameOver()
     }
-})
-input.onButtonPressed(Button.AB, function () {
-    game.gameOver()
-})
-input.onButtonPressed(Button.B, function () {
-    game.pause()
 })
 let wacht = 0
 let sprite: game.LedSprite = null
@@ -47,7 +38,7 @@ basic.forever(function () {
 })
 basic.forever(function () {
     if (game.score() == 19) {
-        wacht = 105
+        wacht = 100
     }
 })
 basic.forever(function () {
@@ -93,11 +84,6 @@ basic.forever(function () {
 basic.forever(function () {
     if (game.score() == 12) {
         wacht = 140
-    }
-})
-basic.forever(function () {
-    if (game.score() == 23) {
-        wacht = 100
     }
 })
 basic.forever(function () {
