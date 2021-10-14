@@ -1,41 +1,16 @@
-input.onButtonPressed(Button.A, function () {
+input.onPinPressed(TouchPin.P0, function () {
     if (sprite.get(LedSpriteProperty.X) == 2) {
         game.addScore(1)
     } else {
         game.gameOver()
     }
 })
+input.onButtonPressed(Button.A, function () {
+	
+})
 let wacht = 0
 let sprite: game.LedSprite = null
 sprite = game.createSprite(2, 2)
-basic.forever(function () {
-    if (game.score() == 15) {
-        game.pause()
-        basic.showLeds(`
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            # # # # #
-            `)
-        basic.showLeds(`
-            . . . . .
-            . # # # .
-            . # # # .
-            . # # # .
-            . . . . .
-            `)
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . # . .
-            . . . . .
-            . . . . .
-            `)
-        basic.showString("gewonnen!")
-        basic.showString("druk op a+b")
-    }
-})
 basic.forever(function () {
     if (game.score() == 1) {
         wacht = 230
